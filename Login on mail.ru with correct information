@@ -11,6 +11,6 @@ Scenario: Correct procedure log in by user
     And I enter in field «Пароль» <truefalse>
      And I press button «Войти в почту»
  Then I should see folder «Входящие»
-  And I should see address <://e.mail.ru/cgi-bin/msglist?back=1>
-   Or I should see address < https://e.mail.ru/cgi-bin/msglist>
+  And I should see address <https://e.mail.ru/cgi-bin/msglist?back=1>
+   Or I should see address <https://e.mail.ru/cgi-bin/msglist>
 
