@@ -1,16 +1,16 @@
 Feature:  Login on mail.ru with correct information
- In order to test login
- A user
- Should be able to correct procedure log in
+  In order to log in
+  A user
+  Should be able to log in
 
 Scenario: Correct procedure log in by user
- Given I log in by user
- When I enter address in browser <http://e.mail.ru/cgi-bin/login>
- And I enter in field  «Имя» <is-1911>
- And I enter in right field <mail.ru>
- And I enter in field «Пароль» <truefalse>
- And I press button «Войти в почту»
- Then I should see folder «Входящие»
- And I should see address <https://e.mail.ru/cgi-bin/msglist?back=1>
- Or I should see address <https://e.mail.ru/cgi-bin/msglist>
+  Given I log in by user
+  When I enter address in browser <http://e.mail.ru/cgi-bin/login>
+  And I enter in field  «Имя» <is-1911>
+  And I enter in right field <mail.ru>
+  And I enter in field «Пароль» <truefalse>
+  And I press button «Войти в почту»
+  Then I should see folder «Входящие»
+  And I should see address <https://e.mail.ru/cgi-bin/msglist?back=1>
+  Or I should see address <https://e.mail.ru/cgi-bin/msglist>
 
